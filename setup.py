@@ -1,13 +1,17 @@
 from setuptools import find_packages, setup
 # We are going to use setup tp define parameters, and use find_packages to exclude tests.
 
+# Load the README.md contents for long_description
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name="flitton_fib_py",
     version="0.0.1",
     author="Weiren",
     author_email="miblue119@gmail.com",
     description="Calculates a Fibonacci number",
-    long_description="A basic practice for calculating fibonacci numbers",
+    long_description=long_description,
     url="https://github.com/MIBlue119/flitton-fib-py",
     install_requires=[],
     packages=find_packages(exclude=("tests",)),
