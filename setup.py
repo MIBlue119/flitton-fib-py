@@ -23,7 +23,7 @@ setup(
     ],
     entry_points={
         'console_scripts':[
-            'fib-number=flitton_fib_py.cmd.fibnumb:fib_numb'
+            'fib-number=flitton_fib_py.cmd.fib_numb:fib_numb'
         ]
     },
     python_requires=">=3",
