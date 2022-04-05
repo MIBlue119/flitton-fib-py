@@ -28,4 +28,7 @@ setup(
     },
     python_requires=">=3",
     test_require=['pytest'],
+    extra_require={
+        'server': ["Flask>=1.0.0"]
+    }
 )
