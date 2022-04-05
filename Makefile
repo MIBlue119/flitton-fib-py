@@ -13,3 +13,6 @@ install: ## Install the module from github by pip
 	pip install git+https://github.com/MIBlue119/flitton-fib-py@main
 uninstall: ## Uninstall the package
 	pip uninstall flitton-fib-py
+
+test: ## Run unittests
+	./scripts/run_tests.sh 
