@@ -8,3 +8,6 @@ create_venv: ## Create venv
 	python3 -m venv venv 
 activate: ## Activate venv 
 	source venv/bin/activate 
+
+uninstall: ## Uninstall the package
+	pip uninstall flitton-fib-py
