@@ -9,5 +9,7 @@ create_venv: ## Create venv
 activate: ## Activate venv 
 	source venv/bin/activate 
 
+install: ## Install the module from github by pip
+	pip install git+https://github.com/MIBlue119/flitton-fib-py@main
 uninstall: ## Uninstall the package
 	pip uninstall flitton-fib-py

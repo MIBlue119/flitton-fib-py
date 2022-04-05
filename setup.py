@@ -1,3 +1,4 @@
+from importlib.metadata import entry_points
 from setuptools import find_packages, setup
 # We are going to use setup tp define parameters, and use find_packages to exclude tests.
 
@@ -20,6 +21,11 @@ setup(
         "Programming Language :: Python ::3",
         "Operating System :: OS Independent",
     ],
+    entry_points={
+        'console_scripts':[
+            'fib-number=flitton_fib_py.cmd.fibnumb:fib_numb'
+        ]
+    },
     python_requires=">=3",
     test_require=['pytest'],
 )
